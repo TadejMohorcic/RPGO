@@ -1,7 +1,7 @@
 function b = power2bernstein(p)
-% Funkcija power2bernstein pretvori polinom p = [p_n, ..., p_1, p_0],
-% predstavljen s koeficient v potenčni bazi, v polinom b = [b_0, b_1, ...,
-% b_n], predstavljen v Bernsteinovi bazi.
+% funkcija power2bernstein pretvori polinom p = [p_n, ..., p_1, p_0],
+% predstavljen v potenčni bazi, v polinom b = [b_0, b_1, ..., b_n],
+% predstavljen v Bernsteinovi bazi
 
 n = length(p);
 M = zeros(n);

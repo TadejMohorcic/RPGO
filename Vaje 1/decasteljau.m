@@ -1,6 +1,6 @@
 function D = decasteljau(b,t)
-% Funkcija decasteljau vrne shemo de Casteljaujevega postopka za dan seznam
-% koordinat b pri danem parametru t.
+% funkcija decasteljau vrne shemo de Casteljaujevega postopka za dan seznam
+% koordinat b pri danem parametru t
 
 n = length(b);
 D = zeros(n);
@@ -22,4 +22,3 @@ for j = 1:n
 end
 
 end
-

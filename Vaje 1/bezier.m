@@ -1,5 +1,5 @@
 function b = bezier(B,t)
-% Funkcija bezier vrne točke na Bezierjevi krivulji pri danih parametrih.
+% funkcija bezier vrne točke na Bezierjevi krivulji pri danih parametrih
 
 m = length(t);
 n = size(B,2);
