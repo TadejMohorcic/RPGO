@@ -1,9 +1,9 @@
 n = 5;
 fi = pi/n;
 
-B1 = bezierarc(fi,1);
-B2 = bezierarc(fi,2);
-B3 = bezierarc(fi,3);
+B1 = bezierarc(fi,1)
+B2 = bezierarc(fi,2)
+B3 = bezierarc(fi,3)
 
 % izračun točk na Bezierjevih krivuljah
 t = linspace(0,1,1001);
@@ -18,7 +18,7 @@ e1 = max(e1,abs(1-norm(b1(i,:))));
 e2 = max(e2,abs(1-norm(b2(i,:))));
 e3 = max(e3,abs(1-norm(b3(i,:))));
 end
-e = [e1,e2,e3];
+[e1,e2,e3]
 
 % rotacijska matrika
 c = cos(2*fi);
