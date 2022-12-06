@@ -15,9 +15,12 @@ tab{:,'y'} = d1b(:,2);
 t = linspace(0,1);
 [d1b,d1B] = bezierder(B,1,t);
 [d2b,d2B] = bezierder(B,2,t);
+
 subplot(1,3,1);
 plotbezier(B,t,c1);
+
 subplot(1,3,2);
 plotbezier(d1B,t,c2);
+
 subplot(1,3,3);
 plotbezier(d2B,t,c3);
