@@ -5,18 +5,15 @@ p = [4 7 2 8 9 1 4];
 b = power2bernstein(p);
 
 % prevedba nazaj v potenčno bazo
-bernstein2power(b)
+bernstein2power(b);
 
-% neka utemeljitev...
 power2bernstein(1)
 power2bernstein([0 1])
 power2bernstein([0 0 1])
-
 power2bernstein([1 0])
 power2bernstein([0 1 0])
 power2bernstein([0 0 1 0])
 
-% narisemo Bernsteinove bazne polinome stopnje n
 n = 5;
 x = linspace(0,1);
 clf

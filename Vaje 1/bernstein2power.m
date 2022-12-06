@@ -1,7 +1,18 @@
 function p = bernstein2power(b)
-% funkcija bernstein2power pretvori polinom b = [b_0, b_1, ..., b_n],
-% predstavljen v Bernsteinovi bazi, v polinom p = [p_n, ..., p_1, p_0],
-% predstavljen v potenčni bazi
+% Opis:
+%  bernstein2power pretvori polinom, predstavljen s koeficienti v
+%  Bernsteinovi bazi, v polinom, predstavljen v potenčni bazi
+%
+% Definicija:
+%  p = bernstein2power(b)
+%
+% Vhodni podatek:
+%  b    seznam koeficientov dolžine n+1, ki po vrsti pripadajo razvoju
+%       polinoma stopnje n v Bernsteinovi bazi od 0-tega do n-tega
+%       Bernsteinovega baznega polinoma
+% Izhodni podatek:
+%  p    seznam koeficientov dolžine n+1, ki po vrsti pripadajo razvoju
+%       polinoma stopnje n v potenčni bazi od x^n do 1
 
 n = length(b);
 M = zeros(n);
