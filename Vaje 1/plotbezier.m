@@ -29,6 +29,6 @@ p = {
 
     scatter(B(:,1),B(:,2),25,'MarkerEdgeColor','#1E1C32',...
                              'MarkerFaceColor','#C6BAAC');
-};
+    };
 
 end
