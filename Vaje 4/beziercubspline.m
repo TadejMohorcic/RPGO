@@ -1,4 +1,4 @@
-function B = beziercubspline(u, D)
+function B = beziercubspline(u,D)
 % Opis:
 %  beziercubspline izračuna sestavljeno Bezierjevo krivuljo stopnje 3,
 %  ki je dvakrat zvezno odvedljiva v stikih
