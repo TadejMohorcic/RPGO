@@ -1,5 +1,5 @@
 % izbrane barve
-c = "#F4A261";
+c = '#979bc7';
 
 B = [0 0; 2 3; 4 2; 5 -1];
 BS = beziersub(B,0.4,1);

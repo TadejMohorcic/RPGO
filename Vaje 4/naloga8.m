@@ -1,7 +1,7 @@
 % izbrane barve
-c1 = "#264653";
-c2 = "#E9C46A";
-c3 = "#E76F51";
+c1 = '#fae6cd';
+c2 = '#f3c0ce';
+c3 = '#979bc7';
 
 D = [-5 0; -4 1; -2 -1; 0 3; 3 0; 5 2; 7 -1];
 P = D([1 3 4 5 7],:);
@@ -22,7 +22,8 @@ Bt = beziercubspline(ut,D);
 t = linspace(0,1);
 clf
 hold on
-plot(D(:,1),D(:,2),'ko-','MarkerFaceColor','k','MarkerSize',8);
+plot(D(:,1),D(:,2),'Color','#272946');
+scatter(D(:,1),D(:,2),25,'MarkerEdgeColor','#272946','MarkerFaceColor','#eda031');
 for i = 1:4
     s1 = plotbezier(Be{i},t,c1);
     s2 = plotbezier(Bc{i},t,c2);

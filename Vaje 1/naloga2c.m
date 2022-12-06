@@ -1,7 +1,7 @@
 % izbrane barve
-c1 = "#E9C46A";
-c2 = "#F4A261";
-c3 = "#E76F51";
+c1 = '#fae6cd';
+c2 = '#f3c0ce';
+c3 = '#979bc7';
 
 B = [0 0; 1 2; 3 3; 4 -1; 0 2];
 t = linspace(0,1);

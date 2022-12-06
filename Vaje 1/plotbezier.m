@@ -22,13 +22,9 @@ axis equal
 b = bezier(B,t);
 
 p = {
-    plot(b(:,1),b(:,2),'Color',c,...
-                       'LineWidth',1.5);
-
-    plot(B(:,1),B(:,2),'Color','#1E1C32');
-
-    scatter(B(:,1),B(:,2),25,'MarkerEdgeColor','#1E1C32',...
-                             'MarkerFaceColor','#C6BAAC');
+    plot(b(:,1),b(:,2),'Color',c,'LineWidth',1.5);
+    plot(B(:,1),B(:,2),'Color','#272946');
+    scatter(B(:,1),B(:,2),25,'MarkerEdgeColor','#272946','MarkerFaceColor','#eda031');
     };
 
 end
