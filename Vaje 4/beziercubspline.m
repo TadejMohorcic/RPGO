@@ -1,6 +1,20 @@
 function B = beziercubspline(u, D)
-% funkcija beziercubspline izračuna sestavljeno Bezierjevo krivuljo stopnje
-% 3, ki je dvakrat zvezno odvedljiva v stikih.
+% Opis:
+%  beziercubspline izračuna sestavljeno Bezierjevo krivuljo stopnje 3,
+%  ki je dvakrat zvezno odvedljiva v stikih
+%
+% Definicija:
+%  B = beziercubspline(u,D)
+%
+% Vhodna podatka:
+%  u    seznam parametrov delitve dolžine m+1,
+%  D    matrika, v kateri vsaka izmed m+3 vrstic predstavlja eno
+%       kontrolno točko sestavljene krivulje
+%
+% Izhodni podatek:
+%  B    celični seznam dolžine m, v kateri je vsak element matrika
+%       s štirimi vrsticami, ki določajo kontrolne točke kosa
+%       sestavljene krivulje
 
 n = size(D,1);
 m = size(D,2);
