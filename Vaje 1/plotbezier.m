@@ -11,7 +11,7 @@ function p = plotbezier(B,t,c)
 %       Bezierjeve krivulje stopnje n v d-dimenzionalnem prostoru,
 %  t    seznam parametrov dolžine k, pri katerih računamo vrednost
 %       Bezierjeve krivulje,
-%  c    opcijski parameter, ki določa barvo krivulje
+%  c    parameter, ki določa barvo krivulje
 %
 % Izhodni podatek:
 %  p    grafični objekt, ki določa krivuljo
