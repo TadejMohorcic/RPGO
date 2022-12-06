@@ -1,6 +1,20 @@
 function [db,dB] = bezierder(B,r,t)
-% funkcija bezierder vrne točke na krivulji, ki predstavljajo odvod dane
-% Bezierjeve krivulje
+% Opis:
+%  bezierder vrne točke na krivulji, ki predstavlja odvod dane
+%  Bezierjeve krivulje
+%
+% Definicija:
+%  db = bezierder(B,r,t)
+%
+% Vhodni podatki:
+%  B    matrika kontrolnih točk Bezierjeve krivulje, v kateri vsaka
+%       vrstica predstavlja eno kontrolno točko,
+%  r    stopnja odvoda, ki ga računamo,
+%  t    seznam parameterov, pri katerih računamo odvod
+%
+% Izhodni podatek:
+%  db   matrika, v kateri vsaka vrstica predstavlja točko r-tega
+%       odvoda pri istoležnem parametru iz seznama t
 
 m = length(t);
 n = size(B,2);
@@ -16,6 +30,7 @@ for i = 1:m
         end
     end
 end
+
 db = factorial(o-1)/factorial(o-1-r) * db;
 
 for i = 1:n
