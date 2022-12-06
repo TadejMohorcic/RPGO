@@ -1,3 +1,6 @@
+% izbrane barve
+c = "#F4A261";
+
 B = [0 0; 2 3; 4 2; 5 -1];
 BS = beziersub(B,0.4,1);
 [BS{1} BS{2}]
@@ -15,9 +18,9 @@ t = linspace(0,1);
 subt = 0.5;
 for k = 1:3
     subplot(1,3,k);
-    plotbezier(B,t);
+    plotbezier(B,t,c);
     BS = beziersub(B,subt,k);
     for d = 1:length(BS)
-        plotbezier(BS{d},t);
+        plotbezier(BS{d},t,c);
     end
 end
