@@ -1,4 +1,4 @@
-function [Bx,By,Bz] = coons(Bx,By,Bz)
+function [bx,by,bz] = coons(Bx,By,Bz)
 % Opis:
 %  coons vrne kontrolne točke Coonsove ploskve
 %
@@ -13,7 +13,7 @@ function [Bx,By,Bz] = coons(Bx,By,Bz)
 %               posamezne matrike)
 %
 % Izhodni podatki:
-%  Bx, By, Bz   matrike velikosti n+1 x m+1, ki določajo koordinate
+%  bx, by, bz   matrike velikosti n+1 x m+1, ki določajo koordinate
 %               kontrolnih točk Coonsove ploskve
 
 n = size(Bx,1);

@@ -29,7 +29,22 @@ for i = 1:M
     for j = 1:N
         vr = V(j) <= P(:,2) & P(:,2) <= V(j+1);
         A = P(ur & vr,:);
+        A = [(A(:,1) - U(i))/(U(i+1) - U(i)) (A(:,2) - V(j))/(V(j+1) - V(j)) A(:,3)];
         S{j,i} = lsqbezier2(m,n,A);
+    end
+end
+
+for  j = 1:N
+    for i = 1:M-1
+        S{j,i}(:,m+1) = 1/2*S{j,i}(:,m) + 1/2*S{j,i+1}(:,2);
+        S{j,i+1}(:,1) = 1/2*S{j,i}(:,m) + 1/2*S{j,i+1}(:,2);
+    end
+end
+
+for i = 1:M
+    for j = 1:N-1
+        S{j,i}(n+1,:) = 1/2*S{j,i}(n,:) + 1/2*S{j+1,i}(2,:);
+        S{j+1,i}(1,:) = 1/2*S{j,i}(n,:) + 1/2*S{j+1,i}(2,:);
     end
 end
 

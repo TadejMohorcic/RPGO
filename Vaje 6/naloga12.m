@@ -21,3 +21,6 @@ Bz(:,7) = sin(psi);
 
 % kontrolne točke Coonsove ploskve
 [Bx,By,Bz] = coons(Bx,By,Bz)
+
+[u,v] = deal(linspace(0,1,50));
+plotbezier2(Bx,By,Bz,u,v);
