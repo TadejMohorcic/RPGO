@@ -45,5 +45,8 @@ end
 norm(Z(:)-bz(:),Inf)
 
 % izris
+colormap spring;
+subplot(1,2,1);
 surf(X,Y,Z);
+subplot(1,2,2);
 surf(bx,by,bz);

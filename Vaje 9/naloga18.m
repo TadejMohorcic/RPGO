@@ -60,6 +60,12 @@ tri = triangulation(TRI,X,Y);
 
 S = argyrisspline(tri,f,Df,Hf);
 
+S{1}
+S{2}
+S{3}
+S{12}
+S{15}
+
 % izračun vrednosti zlepka nad mrežo točk
 N = 101;
 [X,Y] = meshgrid(linspace(-3,3,N));

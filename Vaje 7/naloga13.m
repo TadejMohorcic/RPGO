@@ -22,5 +22,8 @@ Bz = lsqbezier2(m,n,P);
 [bx,by,bz] = bezier2(Bx,By,Bz,u,v);
 norm(bz(:)-P(:,3),Inf)
 
+colormap spring;
+subplot(1,2,1);
 surf(X,Y,Z);
+subplot(1,2,2);
 surf(bx,by,bz);
